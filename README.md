@@ -9,6 +9,11 @@ machines. They are shared as-is in case they're useful to others.
 
 - `networking/install-ipset-blacklist-debian13.sh` — installs and configures an
   ipset-based IP blacklist on Debian 13.
+- `debian/install-guacamole.sh` — installs Apache Guacamole (guacd + web app +
+  PostgreSQL) under `/opt/guacamole` with Docker Compose on Debian 13. Installs
+  Docker if needed, replaces the stock `guacadmin` password before the web app
+  is ever reachable, and writes the credentials and a log next to the script.
+  Safe to re-run.
 
 ## No warranty
 
